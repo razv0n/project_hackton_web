@@ -1,19 +1,20 @@
 
 h1{
-    color: black;
+    color: #144EE3;
     text-align: center;
-    font-size: 60px;
+    font-size: 75px;
     font-family: 'Poppins';
 }
 
 h4{
-    color: grey;
+    color: black;
     text-align: center;
-    font-size: 30px;
+    font-size: 40px;
     font-family: 'Poppins';
 }
 
 body {
+    background-color: #EBEDEF;
     display: flex;
     justify-content: center;   
     align-items: center;      
@@ -26,33 +27,35 @@ body {
 }
 
 .element{
-    width: 200px;
+    width: 250px;
     height: 45px;
     text-align: center;
     align-content: center;
     font-weight: 700;
     font-size: 20px;
     border-radius: 10px;
-    background-color: #adff11;
-    margin: 10px;
+    background-color: #144EE3;
+    margin: 20px;
+    cursor: pointer;
+}
+.element:hover{
+    background-color: black;
 }
 
 .card{
-    
-    height: 350px;
     width: 300px;
-    border-radius: 10px;
-    background-color: #efffcf;
-    margin: 10px;
+    border-radius: 15px;
+    background-color: white;
+    margin: 20px;
     display: flex;
     justify-content: start;
     align-items: center;
     flex-direction: column;
-    border:  1px solid #adff11;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 5px;
 }
 
 .ds{
-    padding: 25px;
+    padding: 25px 35px 5px 35px;
     color: black;
     text-align: center;
 
@@ -60,7 +63,7 @@ body {
 
 .list{
 
-    color: black;
+    color: white;
     font-family: 'Poppins';
     display: flex;
     justify-content: center;
@@ -68,7 +71,7 @@ body {
 }
 
 .description{
-    font-size: 20px;
+    font-size: 18px;
     color: black;
     font-family: 'Poppins';
 }
