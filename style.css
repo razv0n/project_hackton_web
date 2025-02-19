@@ -1,77 +1,176 @@
-
-h1{
-    color: #144EE3;
-    text-align: center;
-    font-size: 75px;
-    font-family: 'Poppins';
+/* Hero-sectio ===================================== */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-h4{
-    color: black;
-    text-align: center;
-    font-size: 40px;
-    font-family: 'Poppins';
+.hero-section {
+  max-width: 80%;
+  margin: 0px auto;
+  padding: 1.5rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+h1 {
+  color: #144ee3;
+  text-align: center;
+  font-size: 75px;
+  font-family: "Poppins";
 }
 
-body {
-    background-color: #EBEDEF;
+h4 {
+  color: black;
+  text-align: center;
+  font-size: 20px;
+  font-family: "Poppins";
+}
+.hero-button {
+  padding: 7px 10px;
+  border-radius: 50px;
+  color: white;
+  background-color: #144ee3;
+  outline: none;
+  border: none;
+  font-weight: bolder;
+  font-size: 20px;
+  margin-top: 2rem;
+}
+/* body {
+
     display: flex;
-    justify-content: center;   
-    align-items: center;      
-    height: 100vh;            
-              
-}
-
-.container{
-    max-width: 80%;
-}
-
-.element{
-    width: 250px;
-    height: 45px;
-    text-align: center;
-    align-content: center;
-    font-weight: 700;
-    font-size: 20px;
-    border-radius: 10px;
-    background-color: #144EE3;
-    margin: 20px;
-    cursor: pointer;
-}
-.element:hover{
-    background-color: black;
-}
-
-.card{
-    width: 300px;
-    border-radius: 15px;
-    background-color: white;
-    margin: 20px;
-    display: flex;
-    justify-content: start;
-    align-items: center;
     flex-direction: column;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 5px;
+    justify-content: center;   
+    align-items: center;           
+              
+} */
+
+.container {
+  align-content: center;
 }
 
-.ds{
-    padding: 25px 35px 5px 35px;
-    color: black;
-    text-align: center;
-
+.element {
+  width: 250px;
+  height: 45px;
+  text-align: center;
+  align-content: center;
+  font-weight: 700;
+  font-size: 20px;
+  border-radius: 10px;
+  background-color: #144ee3;
+  margin: 20px;
+  cursor: pointer;
+}
+.element:hover {
+  background-color: black;
 }
 
-.list{
+.card {
+  width: 300px;
+  border-radius: 15px;
+  background-color: white;
+  margin: 20px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 5px;
+}
 
-    color: white;
-    font-family: 'Poppins';
+.ds {
+  padding: 1rem;
+  color: black;
+  text-align: center;
+  /* font-size: 10px; */
+}
+
+.list {
+  color: white;
+  font-family: "Poppins";
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+
+  max-width: 80%;
+  margin: 0px auto;
+  padding: 1.5rem;
+}
+
+.description {
+  font-size: 15px;
+  color: black;
+  font-family: "Poppins";
+}
+
+.img {
+  /* width: 300px; */
+  width: 40rem;
+  object-fit: contain;
+  margin: 1.5rem;
+  /* padding: 1.5rem; */
+}
+
+.section {
+  display: flex;
+  flex-direction: row;
+  height: 550px;
+  width: 100%;
+  background-color: #f5f5f5;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.section-right{
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    height: 550px;
+    width: 100%;
+    background-color: white;
+    flex-wrap: wrap;
     align-items: center;
+  }
+
+.section-child {
+  margin: 0px auto;
+  color: black;
+  font-family: "Poppins";
+  font-size: 20px;
+  padding: 0px auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
 }
 
-.description{
-    font-size: 18px;
-    color: black;
-    font-family: 'Poppins';
+
+.section-button{
+  color:#144ee3;
+  background-color: #f5f5f5;
+  border-color: #144ee3;
+  font-size: 20px;
+  font-family: "Poppins";
+  border-width: 1px;
+  padding: 5px 20px;
+  border-radius: 10px;
+}
+
+
+.sub-title {
+
+
+  color: black;
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.sub-ds{
+  margin: 15px 80px;
+  width: 35rem;
+  color: black;
+  font-size: 20px;
+  font-weight: 500;
 }
