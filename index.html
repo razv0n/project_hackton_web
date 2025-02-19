@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
       rel="stylesheet"
@@ -12,46 +13,52 @@
   </head>
   <body>
     <div class="container">
-      <div class="hero-section">
-        <h1>1337 Insider Guide</h1>
-        <h4>
-          ultimate resource for everything about 1337 School. From academic
-          insights to survival tips,<br />we've got you covered on your journey
-          to success.
-        </h4>
-        <button class="hero-button">Descover More</button>
+      <div id="particles-js" class="hero-section">
+        <div id="black-layer"></div>
+        <div class="hero-container">
+          <h1>1337 Insider Guide</h1>
+          <h4>
+            ultimate resource for everything about 1337 School. From academic
+            insights to survival tips, we've got you covered on your journey to
+            success.
+          </h4>
+          <a href="#1" class="hero-button">Discover More</a>
+        </div>
+        <script src="./particles.js" type="text/javascript"></script>
+        <script src="./app.js" type="text/javascript"></script>
       </div>
-      <div class="section">
+      <div class="section" id="1">
         <div class="section-child">
           <img src="images/05.png" class="img" /><img />
           <div>
             <span class="sub-title">Road Map</span>
             <p class="sub-ds">
-            Navigate your journey at 1337 with a clear roadmap
-            that guides you through every stage of learning.
-            From the selection process to advanced projects,
-            understand how each phase builds your skills,
-            enhances problem-solving, and prepares you for
-            real-world challenges. Learn what to expect,
-            how to tackle obstacles, and how to make the
-            most of your experience to become a skilled
-            and adaptable developer.
+              Navigate your journey at 1337 with a clear roadmap that guides you
+              through every stage of learning. From the selection process to
+              advanced projects, understand how each phase builds your skills,
+              enhances problem-solving, and prepares you for real-world
+              challenges. Learn what to expect, how to tackle obstacles, and how
+              to make the most of your experience to become a skilled and
+              adaptable developer.
             </p>
-            <button class="section-button" >Load more</button>
+            <button class="section-button">Read more</button>
           </div>
         </div>
       </div>
-      <div class="section-right">
+      <div class="section-right" id="">
         <div class="section-child">
           <div>
-            <span class="sub-title">Road Map</span>
-            <p>
-              Discover the real value behind every project. Learn how each
-              task<br />
-              enhances your skills, prepares you for real-world challenges,
-              and<br />
-              contributes to your growth as a developer.
+            <span class="sub-title">Common Core</span>
+            <p class="sub-ds">
+              Dive deep into the Common Core curriculum, the foundation of your
+              learning at 1337. Explore every milestone, from beginner projects
+              to complex coding challenges. Understand the objectives of each
+              project, the skills they develop, and how they prepare you for
+              specialized tracks. Get insights on overcoming difficulties,
+              improving your workflow, and making the most of this critical
+              phase to strengthen your programming expertise.
             </p>
+            <button class="section-button">Read more</button>
           </div>
           <img src="images/04.png" class="img" /><img />
         </div>
@@ -60,24 +67,32 @@
         <div class="section-child">
           <img src="images/03.png" class="img" /><img />
           <div>
-            <span class="sub-title">Road Map</span>
-            <p>
-              Discover the real value behind every project. Learn how each
-              task<br />
-              enhances your skills, prepares you for real-world challenges,
-              and<br />
-              contributes to your growth as a developer.
+            <span class="sub-title">Project Benefits</span>
+            <p class="sub-ds">
+              Every project at 1337 is designed with a purpose shaping you into
+              a skilled problem solver and adaptable developer. Discover the
+              value behind each task, from mastering algorithms to building
+              full-scale applications. Learn how projects enhance critical
+              thinking, teamwork, and real-world coding experience, giving you
+              the confidence and knowledge to tackle challenges beyond 1337 and
+              succeed tech industry.
             </p>
+            <button class="section-button">Read more</button>
           </div>
+        </div>
+      </div>
+      <div>
+        <div class="free-container">
+          <span class="sub-title">Related Sections</span>
         </div>
       </div>
       <div class="list">
         <div class="card">
           <div class="ds">
             <span class="description"
-              >Discover the real value behind every project. Learn how each task
-              enhances your skills, prepares you for real-world challenges, and
-              contributes to your growth as a developer.</span
+              >Follow a clear path at 1337, building skills step by step, from
+              basic tasks to complex projects, preparing you for real-world
+              development.</span
             >
           </div>
           <div class="element">Road Map</div>
@@ -85,9 +100,9 @@
         <div class="card">
           <div class="ds">
             <span class="description"
-              >Discover the real value behind every project. Learn how each task
-              enhances your skills, prepares you for real-world challenges, and
-              contributes to your growth as a developer.</span
+              >Explore the core projects that lay the foundation of your skills,
+              preparing you for more advanced coding challenges and specialized
+              tracks.</span
             >
           </div>
           <div class="element">Common Core</div>
@@ -95,9 +110,9 @@
         <div class="card">
           <div class="ds">
             <span class="description"
-              >Discover the real value behind every project. Learn how each task
-              enhances your skills, prepares you for real-world challenges, and
-              contributes to your growth as a developer.</span
+              >Each project at 1337 builds key skills like problem-solving and
+              teamwork, equipping you for success in real-world
+              development.</span
             >
           </div>
           <div class="element">project benefits</div>

@@ -3,10 +3,11 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth ;
 }
 
 .hero-section {
-  max-width: 80%;
+  max-width: 100%;
   margin: 0px auto;
   padding: 1.5rem;
   min-height: 100vh;
@@ -14,23 +15,49 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: 100%;
+  position: relative;
 }
+
+#black-layer
+{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+  z-index: 10;
+}
+
+.hero-container {
+  max-width: 100%;
+  z-index: 20;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 h1 {
   color: #144ee3;
   text-align: center;
-  font-size: 75px;
+  font-size: 85px;
   font-family: "Poppins";
 }
 
 h4 {
   color: black;
   text-align: center;
-  font-size: 20px;
+  font-size: 30px;
   font-family: "Poppins";
 }
 .hero-button {
   padding: 7px 10px;
-  border-radius: 50px;
+  border-radius: 5px;
   color: white;
   background-color: #144ee3;
   outline: none;
@@ -38,7 +65,19 @@ h4 {
   font-weight: bolder;
   font-size: 20px;
   margin-top: 2rem;
+  /* cursor: pointer; */
+  /* cursor: hand; */
+  cursor: pointer;
+  text-decoration: none;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+.hero-button:hover {
+  /* font-size: 24px; */
+  transform: scale(1.03);
+  /* transition: 1s ease-in-out; */
+}
+
 /* body {
 
     display: flex;
@@ -53,19 +92,22 @@ h4 {
 }
 
 .element {
-  width: 250px;
-  height: 45px;
+  width: 200px;
+  height: 40px;
   text-align: center;
   align-content: center;
-  font-weight: 700;
-  font-size: 20px;
-  border-radius: 10px;
+  font-size: 18px;
+  border-radius: 5px;
   background-color: #144ee3;
   margin: 20px;
   cursor: pointer;
+  border: 1px solid transparent;
 }
 .element:hover {
-  background-color: black;
+  color: #144ee3;
+  background-color: white;
+  border-color: #144ee3;
+  border-radius: 5px;
 }
 
 .card {
@@ -91,7 +133,7 @@ h4 {
   color: white;
   font-family: "Poppins";
   display: flex;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 
@@ -101,7 +143,7 @@ h4 {
 }
 
 .description {
-  font-size: 15px;
+  font-size: 16px;
   color: black;
   font-family: "Poppins";
 }
@@ -124,15 +166,15 @@ h4 {
   align-items: center;
 }
 
-.section-right{
-    display: flex;
-    flex-direction: row;
-    height: 550px;
-    width: 100%;
-    background-color: white;
-    flex-wrap: wrap;
-    align-items: center;
-  }
+.section-right {
+  display: flex;
+  flex-direction: row;
+  height: 550px;
+  width: 100%;
+  background-color: white;
+  flex-wrap: wrap;
+  align-items: center;
+}
 
 .section-child {
   margin: 0px auto;
@@ -146,31 +188,41 @@ h4 {
   text-align: center;
 }
 
-
-.section-button{
-  color:#144ee3;
-  background-color: #f5f5f5;
+.section-button {
+  color: #144ee3;
+  background-color: transparent;
   border-color: #144ee3;
-  font-size: 20px;
+  font-size: 18px;
   font-family: "Poppins";
   border-width: 1px;
-  padding: 5px 20px;
-  border-radius: 10px;
+  margin-top: 10px;
+  padding: 5px 30px;
+  border-radius: 5px;
+}
+.section-button:hover {
+  background-color: #144ee3;
+  color: white;
 }
 
-
 .sub-title {
-
-
   color: black;
+  font-family: "Poppins";
   font-size: 35px;
   font-weight: 700;
 }
 
-.sub-ds{
+.sub-ds {
   margin: 15px 80px;
   width: 35rem;
   color: black;
   font-size: 20px;
   font-weight: 500;
+}
+
+.free-container {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
 }
