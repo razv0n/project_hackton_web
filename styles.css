@@ -277,8 +277,8 @@ body {
 }
 
 .milestone-title {
-  font-size: 1.35rem;
-  font-weight: 200;
+  font-size: 1.15rem;
+  font-weight: 600;
   color: var(--dark);
   letter-spacing: -0.5px;
 }

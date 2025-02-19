@@ -39,7 +39,6 @@ function getDifficultyClass(level) {
   if (level <= 6) return "medium";
   return "hard";
 }
-
 function renderMilestones() {
   const container = document.getElementById("milestone-container");
   if (!container) return;
@@ -48,9 +47,28 @@ function renderMilestones() {
   curriculumData.milestones.forEach((m) => {
     const progress = calculateProgress(m.start, m.end);
     const daysLeft = getDaysRemaining(m.end);
+    
     const card = document.createElement("div");
     card.className = "milestone-card";
-    card.onclick = () => renderProjects(m.id);
+    card.id = `milestone-${m.id}`; // Unique ID for scrolling
+
+    // Click event to render projects and scroll correctly
+    card.onclick = () => {
+      window.location.hash = `milestone-${m.id}`; // Update URL hash
+      renderProjects(m.id);
+
+      // Scroll milestone card into view
+      card.scrollIntoView({ behavior: "smooth", block: "center" });
+
+      // Small delay to ensure milestone scrolls first, then move project details
+      setTimeout(() => {
+        const projectDetailsSection = document.getElementById("project-details");
+        if (projectDetailsSection) {
+          projectDetailsSection.style.marginTop = "20px"; // Add spacing
+          projectDetailsSection.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      }, 500); // Delay to allow milestone scrolling first
+    };
 
     const header = document.createElement("div");
     header.className = "milestone-header";
@@ -96,7 +114,10 @@ function renderMilestones() {
 
     container.appendChild(card);
   });
+
+  // Check if a hash exists in the URL and scroll to the milestone
 }
+
 
 function renderProjects(milestoneId) {
   const container = document.getElementById("project-details-container");
