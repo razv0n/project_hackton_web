@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1337 School Roadmap</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+    <nav class="main-nav">
+        <ul>
+            <li><a href="#milestones">Milestones</a></li>
+            <li><a href="#project-details">Projects</a></li>
+            <li><a href="#pace-calculator">Pace Calculator</a></li>
+            <li><a href="#tools">Tools & Resources</a></li>
+            <li><a href="#explanation">Overview</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section id="milestones" class="milestone-section">
+            <h2 class="section-title">Milestones</h2>
+            <div class="milestone-container" id="milestone-container">
+                <!-- Milestone cards will be dynamically generated here -->
+            </div>
+        </section>
+
+        <section id="project-details" class="project-details-section">
+            <h2 class="section-title">Project Details</h2>
+            <div class="project-details-container" id="project-details-container">
+                <!-- Project cards will be dynamically generated here -->
+            </div>
+        </section>
+
+        <section id="pace-calculator" class="pace-section">
+            <h2 class="section-title">Pace System Calculator</h2>
+            <p class="section-desc">Enter your kickoff date to calculate milestone deadlines based on the 8-month pace system.</p>
+            <div class="calc-area">
+                <input type="date" id="kickoff-date" />
+                <button id="calculate-btn" class="calc-btn">Calculate Deadlines</button>
+            </div>
+            <div id="result-container" class="result-container"></div>
+            <div class="pace-info">
+                <h3 class="subsection-title">Pace Day Distribution</h3>
+                <p class="pace-desc">42 [pace system calculation] day distribution:</p>
+                <table class="pace-table">
+                    <thead>
+                        <tr>
+                            <th>Milestone</th>
+                            <th>8 mths</th>
+                            <th>12 mths</th>
+                            <th>15 mths</th>
+                            <th>18 mths</th>
+                            <th>22 mths</th>
+                            <th>24 mths</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>0</td>
+                            <td>8</td>
+                            <td>13</td>
+                            <td>18</td>
+                            <td>24</td>
+                            <td>30</td>
+                            <td>45</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>24</td>
+                            <td>35</td>
+                            <td>42</td>
+                            <td>48</td>
+                            <td>58</td>
+                            <td>73</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>22</td>
+                            <td>33</td>
+                            <td>41</td>
+                            <td>49</td>
+                            <td>60</td>
+                            <td>60</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>36</td>
+                            <td>53</td>
+                            <td>67</td>
+                            <td>80</td>
+                            <td>98</td>
+                            <td>128</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>51</td>
+                            <td>77</td>
+                            <td>96</td>
+                            <td>115</td>
+                            <td>141</td>
+                            <td>141</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>71</td>
+                            <td>107</td>
+                            <td>134</td>
+                            <td>162</td>
+                            <td>197</td>
+                            <td>197</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>32</td>
+                            <td>47</td>
+                            <td>59</td>
+                            <td>70</td>
+                            <td>86</td>
+                            <td>86</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="tools" class="tools-section">
+            <h2 class="section-title">Useful Tools & Resources</h2>
+            <ul class="tools-list">
+                <li><strong>Gitbook:</strong> Documentation and project guides</li>
+                <li><strong>MiniLibX:</strong> Graphics library for FdF projects</li>
+                <li><strong>Virtual Machine:</strong> Setup & evaluation tutorials</li>
+                <li><strong>Libft:</strong> Building your first custom C library</li>
+                <li><strong>ft_printf:</strong> Variadic functions and formatted output</li>
+                <li><strong>get_next_line:</strong> File reading projects</li>
+                <li><strong>push_swap:</strong> Algorithm design with stacks</li>
+                <!-- Add more resources as needed -->
+            </ul>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 1337 School • Unofficial Roadmap &amp; Pace Calculator</p>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
