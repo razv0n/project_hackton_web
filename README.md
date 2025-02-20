@@ -16,16 +16,17 @@ Follow a structured path from day one to mastering advanced projects. Learn how 
 2. Common Core
 
 Explore all key projects in the Common Core curriculum. Understand their objectives, challenges, and how they contribute to your growth as a programmer.
+
 3. Project Benefits
 
 Discover the real value of each project. Learn how tasks enhance your problem-solving abilities, teamwork, and technical skills for a successful career.
 
 Why This Guide?
 
-    Clear explanations of 1337 School’s structure.
-    Step-by-step insights into projects and milestones.
-    Practical tips to maximize learning and efficiency.
-    Guidance to help you navigate challenges and succeed.
+.Clear explanations of 1337 School’s structure.
+.Step-by-step insights into projects and milestones.
+.Practical tips to maximize learning and efficiency.
+.Guidance to help you navigate challenges and succeed.
 
 Get Started!
 
